@@ -1,0 +1,1 @@
+conda create -n tf21 python=3.7 tensorflow-gpu==2.1 cudatoolkit=10.1 -y
