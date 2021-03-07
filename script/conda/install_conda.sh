@@ -46,7 +46,7 @@ if [ ! -e "$conda_ver" ] ; then
 	echo "是否创建tensorflow、pytorch测试环境"
 	read -p "输入y同意或者任意键取消:" tensorflow_set ;
 	if  [ $tensorflow_set = 'y' ] ; then
-		$conda_path/bin/conda create -n tf21 python=3.7 tensorflow-gpu==2.1 cudatoolkit=10.1 pytorch torchtext torchvision -c pytorch-nightly -y
+		$conda_path/bin/conda create -n tf21 python=3.7 tensorflow-gpu==2.1 pytorch torchtext torchvision -c pytorch-nightly -y
 	else
 		echo "选择不安装测试环境！"
 	fi
